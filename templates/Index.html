@@ -1,11 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
     <h1>Test</h1>
+    <h2>Bienvenido: {{Nombre}}</h2>
+    <h3>El animal favorito del usuario es: {{Animales.1}}</h3>
+
+    <ol>
+        {% for animal in Animales%}
+            <li>{{animal}}</li>
+            {% endfor %}
+    </ol>
+
+    <h1>La amiga se llama {{amigo.nombre}}</h1>
 </body>
 </html>
