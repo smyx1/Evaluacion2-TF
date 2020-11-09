@@ -20,4 +20,5 @@ from Evaluacion2 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Saludar/', views.Saludar),
+    path('Index/', views.Index),
 ]
